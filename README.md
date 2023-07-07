@@ -8,6 +8,7 @@ Single winner giveaway script with variable timer &amp; 60 second claim conforma
     * !ga
     * !enter
     * !claim
+    * !leave
 # Usage
   !giveaway start {#} - starts the giveaway based on the number (in minutes) you provide
   
@@ -19,7 +20,9 @@ Single winner giveaway script with variable timer &amp; 60 second claim conforma
   
   !enter - enters the name of the user who used the command
   
-  !claim - claims the prize.
+  !claim - claims the prize
+
+  !leave - allows user to remove themselves from the current giveaway
   
   # How it works
   Streamer or moderator triggers the start command to start a giveaway for the number of minutes you want it to run. Contestants enter using the !enter command. At the end of the time given, the bot will chose randomly from the list of contestants (assigned by role). If contestant who wins claims the prize by using the !claim command, the script will end and reset everything for the next giveaway. If the contestant who is chosen by the bot does not use the !claim command within 60 seconds, the bot will chose another person and remove the original winner from the list of contestants. If there is no one left to issue the !claim command, it will stop the script and reset it self for the next giveaway.
